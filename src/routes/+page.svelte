@@ -7,15 +7,15 @@
 </script>
 
 <svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<title>SpaceX | Home</title>
+	<meta name="description" content="SpaceX" />
 </svelte:head>
 
 <section>
 	<Header />
-	<div class="mt-[50px] justify-between gap-10 lg:flex lg:px-[100px]">
+	<div class="mt-[50px] block w-full grid-cols-5 justify-between gap-10 lg:grid lg:px-[100px]">
 		<Table {data} />
-		<div class="flex w-full flex-col gap-4">
+		<div class="col-span-2">
 			<Map {data} />
 			<Chart {data} />
 		</div>

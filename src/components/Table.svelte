@@ -37,7 +37,7 @@
 {:else if data.length === 0}
 	<p class="text-red-700">No landing pad data available.</p>
 {:else}
-	<div>
+	<div class="col-span-3 w-full">
 		<div class="mb-3 flex justify-between">
 			<!--  list/grid view -->
 			<div>List/Grid</div>

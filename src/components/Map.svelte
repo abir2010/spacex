@@ -111,7 +111,7 @@
 </script>
 
 <div>
-	<Card size>
+	<Card size class="mb-4">
 		<h5 class="text-md mb-5 me-1 font-bold leading-none text-gray-900 dark:text-white">Map View</h5>
 		<div id="map"></div>
 	</Card>
