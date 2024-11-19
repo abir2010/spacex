@@ -7,6 +7,7 @@
 	const success_rate = (success, attempt) => {
 		return Number(((success / attempt) * 100).toFixed(2));
 	};
+
 	let seriesData = allData.map((item) => {
 		if (item.successful_landings !== 0)
 			return success_rate(item.successful_landings, item.attempted_landings);

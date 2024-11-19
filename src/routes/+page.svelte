@@ -3,7 +3,9 @@
 	import Header from '../components/Header.svelte';
 	import Map from '../components/Map.svelte';
 	import Table from '../components/Table.svelte';
-	export let data;
+	let { data } = $props();
+
+	let selectedStatus = $state('');
 </script>
 
 <svelte:head>
@@ -14,7 +16,7 @@
 <section>
 	<Header />
 	<div class="mt-[50px] block w-full grid-cols-5 justify-between gap-10 lg:grid lg:px-[100px]">
-		<Table {data} />
+		<Table {data} {selectedStatus} />
 		<div class="col-span-2">
 			<Map {data} />
 			<Chart {data} />

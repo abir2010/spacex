@@ -25,13 +25,12 @@
 	} from 'flowbite-svelte-icons';
 	import Loader from './Loader.svelte';
 
-	let { data } = $props();
+	let { data, selectedStatus } = $props();
 	let { data: allData, error, loading } = data;
 
 	let group3 = $state(1);
 	let defaultModal = $state(false);
 	let selectedData = $state({});
-	let selectedStatus = $state('');
 	let selectedView = $state('list');
 
 	let filtered = $state(allData);
@@ -229,6 +228,7 @@
 							</button>
 							<a
 								href={pad.wikipedia}
+								target="_blank"
 								class="inline-flex items-center text-sm text-blue-500 hover:underline"
 							>
 								<ArrowUpRightFromSquareOutline class="ms-2.5 h-4 w-4" />
